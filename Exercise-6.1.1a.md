@@ -1,51 +1,31 @@
-# Exercise 6.2.1
+# Exercise 7.2.2.5
+## Question
+The graph defined by the following sets:
+- N = {1, 2, 3, 4, 5, 6, 7}
+- N0 = {1}
+- Nf = {7}
+- E = {(1, 2), (1, 7), (2, 3), (2, 4), (3, 2), (4, 5), (4, 6), (5, 6), (6, 1)}
 
-## Write down all 64 tests to satisfy the All Combinations (ACoC) criterion for the second categorization of triang()’s inputs in Table 6.2. Use the values in Table 6.3.
-### Code
-```java
-public enum Triangle {
-   SCALENE, ISOSCELES, EQUILATERAL, INVALID
-}
-public class TriangleType
-{
-   /**
-     * @param s1, s2, s3:  sides of the putative triangle
-     * @return enum describing type of triangle
-     */
-   public static Triangle triangle (int s1, int s2, int s3)
-   {
-      // Reject non-positive sides
-      if (s1 <= 0 || s2 <= 0 || s3 <= 0)
-         return (Triangle.INVALID);
+Also consider the following (candidate) test paths:
+- p1 = [1, 2, 4, 5, 6, 1, 7]
+- p2 = [1, 2, 3, 2, 4, 6, 1, 7]
+- p3 = [1, 2, 3, 2, 4, 5, 6, 1, 7]
 
-      // Check triangle inequality
-      if (s1+s2 <= s3 || s2+s3 <= s1 || s1+s3 <= s2)
-         return (Triangle.INVALID);
+### (a) Draw the graph.
+![title](Untitled-1.png)
 
-      // Identify equilateral triangles
-      if ((s1 == s2) && (s2 == s3))
-         return Triangle.EQUILATERAL;
-
-      // Identify isosceles triangles
-      if ((s1 == s2) || (s2 == s3) || (s1 == s3))
-         return Triangle.ISOSCELES;
-
-      return (Triangle.SCALENE);
-   }
-}
-```
-### Tables
-#### Table 6.2
-|Partition|b1|b2|b3|b4|
-|---|---|---|---|---|
-|side1|>1|=1|=0|<0|
-|side2|>1|=1|=0|<0|
-|side3|>1|=1|=0|<0|
-
-#### Table 6.3
-
-|Partition|b1|b2|b3|b4|
-|---|---|---|---|---|
-|side1|2|1|0|-1|
-|side2|2|1|0|-1|
-|side3|2|1|0|-1|
+### (b) List the test requirements for Edge-Pair Coverage.
+13 requirements are needed for Edge-Pairs:
+1. [1,2,3]
+2. [1,2,4]
+3. [1,7]
+4. [2,3,2]
+5. [2,4,5]
+6. [2,4,6]
+7. [3,2,3]
+8. [3,2,4]
+9. [4,5,6]
+10. [4,6,1]
+11. [5,6,1]
+12. [6,1,2]
+13. [6,1,7]
