@@ -2,7 +2,7 @@
 ## A tester defined three characteristics based on the input parameter car: Where Made, Energy Source, and Size. 
 The following partitionings for these characteristics have at least two mistakes. Correct them
 |     | Where Made |    |
-|-----|:----------:|---:|
+|:-----:|:----------:|:---:|
 | North America | Europe  |  Asia  |
 |   | Energy Source  |   |
 |  gas  |  electric  |  hybrid  |
