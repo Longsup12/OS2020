@@ -3,11 +3,11 @@
 The following partitionings for these characteristics have at least two mistakes. Correct them
 |     | Where Made |    |
 |-----|:----------:|---:|
-| North America | Europe  | Asia  |
-| q |   |   |
-| q |   |   |
-| q |   |   |
-| q |   |   |
+| North America | Europe  |  Asia  |
+|   | Energy Source  |   |
+|  gas  |  electric  |  hybrid  |
+|   | Size  |   |
+|  2-door  | 4-door  | hatch back  |
 
 We have 4 cases: 
 * Sorted ascending F, sorted descending F.
