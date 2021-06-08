@@ -7,10 +7,10 @@ The following partitionings for these characteristics have at least two mistakes
 |   | Energy Source  |   |
 |  gas  |  electric  |  hybrid  |
 |   | Size  |   |
-|  2-door  | 4-door  | hatch back  |
+|  2-door  | 4-door  | hatch back  | 
 
-We have 4 cases: 
-* Sorted ascending F, sorted descending F.
-* Sorted ascending T, sorted descending F.
-* Sorted ascending F, sorted descending T.
-* Sorted ascending T, sorted descending T.
+There are 4 characteristics: 
+* Where made: North America, Europe, Asia, Other
+* Energy source: gas, electric, hybrid
+* Number of doors: 2, 4
+* Hatch-back: yes, no
