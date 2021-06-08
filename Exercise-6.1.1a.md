@@ -3,7 +3,7 @@
 The following partitionings for these characteristics have at least two mistakes. Correct them
 |     | Where Made |    |
 |-----|:----------:|---:|
-| q |   |   |
+| North America | Europe  | Asia  |
 | q |   |   |
 | q |   |   |
 | q |   |   |
